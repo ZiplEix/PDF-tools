@@ -9,16 +9,15 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="min-h-dvh flex flex-col bg-zinc-100">
-	<header class="sticky top-0 z-10 bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/70 border-b border-zinc-200">
+<div class="min-h-dvh flex flex-col bg-background text-foreground">
+	<header class="sticky top-0 z-10 bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b border-border">
 		<div class="max-w-6xl mx-auto px-6 sm:px-8 h-14 flex items-center justify-between">
-			<a href="/" class="font-semibold text-zinc-900">PDF Tools</a>
-			<nav aria-label="Navigation principale" class="text-sm text-zinc-600">
+			<a href="/" class="font-semibold">PDF Tools</a>
+			<nav aria-label="Navigation principale" class="text-sm text-muted-foreground">
 				<ul class="flex items-center gap-4 sm:gap-6">
-					<li><a href="/" class="hover:text-zinc-900">Accueil</a></li>
-					<li><a href="/pdf" class="hover:text-zinc-900">PDF</a></li>
-					<li><a href="/images" class="hover:text-zinc-900">Images</a></li>
-					<li><a href="/tools" class="hover:text-zinc-900">Autres</a></li>
+					<li><a href="/pdf" class="hover:text-foreground">PDF</a></li>
+					<li><a href="/images" class="hover:text-foreground">Images</a></li>
+					<li><a href="/tools" class="hover:text-foreground">Autres</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -28,13 +27,13 @@
 		{@render children?.()}
 	</main>
 
-	<footer class="px-6 sm:px-8 py-10 border-t border-zinc-200">
-		<div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
+	<footer class="px-6 sm:px-8 py-10 border-t border-border mt-8">
+		<div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
 			<div>© {year} PDF Tools</div>
 			<div class="flex items-center gap-3">
-				<a href="/legal" class="hover:text-zinc-800 transition">Mentions légales</a>
+				<a href="/legal" class="hover:text-foreground transition">Mentions légales</a>
 				<span class="opacity-30">•</span>
-				<a href="mailto:contact@pdftools.local" class="hover:text-zinc-800 transition">Contact</a>
+				<a href="mailto:contact@pdftools.local" class="hover:text-foreground transition">Contact</a>
 			</div>
 		</div>
 	</footer>
